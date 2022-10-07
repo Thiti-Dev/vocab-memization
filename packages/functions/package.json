@@ -1,0 +1,21 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/node": "^2.5.22",
+    "databases": "workspace:*"
+  },
+  "devDependencies": {
+    "vercel": "^28.4.8",
+    "tsconfig": "workspace:*"
+  }
+}

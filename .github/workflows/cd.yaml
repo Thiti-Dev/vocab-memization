@@ -5,7 +5,7 @@ on:
     types: [completed]
     branches: [main]
 
-obs:
+jobs:
   standard-deployments:
     name: Deployment flow
     runs-on: ubuntu-latest

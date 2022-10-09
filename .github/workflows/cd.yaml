@@ -1,0 +1,23 @@
+name: CD
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+
+obs:
+  standard-deployments:
+    name: Deployment flow
+    runs-on: ubuntu-latest
+
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+
+      - name: Echo Test
+        run: echo "Would be deploying later"

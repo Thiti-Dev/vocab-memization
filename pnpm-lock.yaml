@@ -46,6 +46,7 @@ importers:
       '@rollup/plugin-commonjs': ^17.0.0
       '@rollup/plugin-node-resolve': ^11.0.0
       '@smui/button': ^6.1.4
+      '@smui/circular-progress': ^6.1.4
       '@smui/textfield': ^6.1.4
       '@tsconfig/svelte': ^2.0.1
       '@typescript-eslint/eslint-plugin': ^5.39.0
@@ -53,6 +54,7 @@ importers:
       common: workspace:*
       eslint: ^8.25.0
       eslint-plugin-svelte3: ^4.0.0
+      jwt-decode: ^3.1.2
       prettier: ^2.7.1
       prettier-plugin-svelte: ^2.7.1
       rollup: ^2.79.1
@@ -77,6 +79,7 @@ importers:
       '@rollup/plugin-commonjs': 17.1.0_rollup@2.79.1
       '@rollup/plugin-node-resolve': 11.2.1_rollup@2.79.1
       '@smui/button': 6.1.4_qy6w2iv5hnh55blsjuu7uihyzm
+      '@smui/circular-progress': 6.1.4_qy6w2iv5hnh55blsjuu7uihyzm
       '@smui/textfield': 6.1.4_qy6w2iv5hnh55blsjuu7uihyzm
       '@tsconfig/svelte': 2.0.1
       '@typescript-eslint/eslint-plugin': 5.39.0_cfd7h3iktziq6hcwahu2qxhjhy
@@ -84,6 +87,7 @@ importers:
       common: link:../../packages/common
       eslint: 8.25.0
       eslint-plugin-svelte3: 4.0.0_ewm5tizlamtmyawlmiruh4iq3i
+      jwt-decode: 3.1.2
       prettier: 2.7.1
       prettier-plugin-svelte: 2.7.1_nk6d2fkgcllkkdynqbuearcure
       rollup: 2.79.1
@@ -1608,7 +1612,6 @@ packages:
       '@material/rtl': 13.0.0
       '@material/theme': 13.0.0
       tslib: 2.4.0
-    dev: false
 
   /@material/data-table/13.0.0:
     resolution: {integrity: sha512-Z3yEq1T6Om/A3ntPw0bd40dqtOR4H3++pvchgW35kq+V9xDLL0hfzmuiy0QH4plA2ZsFYJxjt02k/SRvnkjKPQ==}
@@ -1846,7 +1849,6 @@ packages:
     resolution: {integrity: sha512-IfhAMn03gWg/Rl0Bg26Q1g+DrMnaULllz+ZJeIY7BXZC5qFYq1fLq4+RiQmfPGlJfURUjrWNLcI1VDVyXUHHzg==}
     dependencies:
       tslib: 2.4.0
-    dev: false
 
   /@material/radio/13.0.0:
     resolution: {integrity: sha512-6jeZ+dKSzBB/j2IZ7RjFl5mrB+EWnpv/x+U9w6ENLCdueM4+LKUqBAc2fC2WMycsqgoFnlB0xsO/sG+kN0J6fw==}
@@ -2444,7 +2446,6 @@ packages:
     transitivePeerDependencies:
       - svelte
       - typescript
-    dev: false
 
   /@smui/common/6.1.4_qy6w2iv5hnh55blsjuu7uihyzm:
     resolution: {integrity: sha512-l6c4gJH+qP9HdM9RhTP07Gl8eewVbYWT7QfVSAF+wwji32ndjgZLlP5P2Jl/GmsQOOlDoNB3VPy/o4Z/kab31g==}
@@ -5367,6 +5368,10 @@ packages:
       jwa: 1.4.1
       safe-buffer: 5.2.1
     dev: false
+
+  /jwt-decode/3.1.2:
+    resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
+    dev: true
 
   /keyv/3.1.0:
     resolution: {integrity: sha512-9ykJ/46SN/9KPM/sichzQ7OvXyGDYKGTaDlKMGCAlg2UK8KRy4jb0d8sFc+0Tt0YYnThq8X2RZgCg74RPxgcVA==}

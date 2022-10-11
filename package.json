@@ -12,6 +12,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start:functions:dev": "ENVIRONMENT_MODE=development pnpm --filter functions start",
+    "start:svelte:dev": "ENVIRONMENT_MODE=development pnpm --filter vocab-memization-web dev",
     "run:migrate:latest:dev": "ENVIRONMENT_MODE=development pnpm --filter databases migrate:latest",
     "run:migrate:down:dev": "ENVIRONMENT_MODE=development pnpm --filter databases migrate:down:latest",
     "action:test": "act --container-architecture linux/amd64 --secret-file ./.config/act.vault"

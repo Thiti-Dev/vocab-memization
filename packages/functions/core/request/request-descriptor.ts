@@ -25,6 +25,12 @@ export function requestDescriptorize(
   requestMetadata: IRequestMethodFn
 ) {
   const { method: requestMethod } = context.req;
+
+  // Handle the preflight request
+  if (requestMethod === "OPTIONS") {
+    return context.res.status(200).send("ok");
+  }
+
   if (!requestMetadata.hasOwnProperty(requestMethod as TRequestMethodType))
     return context.res
       .status(404)

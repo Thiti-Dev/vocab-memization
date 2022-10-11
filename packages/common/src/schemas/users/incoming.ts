@@ -3,6 +3,7 @@ import { Schema } from "jsonschema";
 export const $USER_REGISTER_SCHEMA$: Schema = {
   id: "/User",
   type: "object",
+  required: true,
   properties: {
     username: {
       type: "string",
@@ -37,6 +38,7 @@ export const $USER_REGISTER_SCHEMA$: Schema = {
 export const $USER_LOGIN_SCHEMA$: Schema = {
   id: "/UserLogin",
   type: "object",
+  required: true,
   properties: {
     username: {
       type: "string",

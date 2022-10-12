@@ -25,6 +25,14 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "packageManager": "pnpm@7.6.0"
+  "packageManager": "pnpm@7.6.0",
+  "pnpm": {
+    "packageExtensions": {
+      "eslint-config-next@*": {
+        "dependencies": {
+          "next": "*"
+        }
+      }
+    }
+  }
 }

@@ -6,8 +6,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "lint": "eslint './src/**/*.{js,ts,svelte}'"
+    "lint": "svelte-check --tsconfig ./tsconfig.json",
+    "lint-strict": "eslint './src/**/*.{js,ts,svelte}'"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",

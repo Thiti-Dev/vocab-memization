@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate:latest": "knex migrate:latest",
-    "migrate:down:latest": "knex migrate:down"
+    "migrate:down:latest": "knex migrate:down",
+    "migrate:rollback:latest": "knex migrate:rollback"
   },
   "keywords": [],
   "author": "",

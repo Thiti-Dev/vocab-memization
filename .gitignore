@@ -34,3 +34,6 @@ yarn-error.log*
 
 #act
 .config
+
+#misc
+priv_**
